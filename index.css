@@ -1,0 +1,71 @@
+/* import for EB Garamond and M PLUS Rounded*/
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+body {
+    background-image: url();
+    background-color: #222645;
+  }
+
+h1 {
+    /*color:#fac632; color for when website is fully formatted*/
+    color: #fac632;
+    font-family: "EB Garamond";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 50pt;
+    margin: 20px 20px 20px 30px;
+}
+
+h3 {
+    color: #FFFFFF;
+    font-family: "EB Garamond";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 35pt;
+    margin: 20px 20px 0px 30px;
+  }
+
+  p {
+    color: white;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 150%;
+    padding: 1%;
+    margin: 1%;
+  }
+
+  /* css for links */
+a:link {
+    color: #fac632;
+  }
+  
+  a:visited {
+    color: white;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+    color: #fac632;
+  }
+  
+  a {
+    all: unset;
+  }
+
+  .flex-container {
+    display: flex;
+    flex-direction: row;
+    width: 600px;
+    font-size: 20pt;
+    text-align: left;
+    margin: 20px 20px 20px 30px;
+  }
+
+  .nav-menu-item{
+    margin: 0px 20px 20px 0px;
+    font-family: "EB Garamond";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15pt;
+  }
