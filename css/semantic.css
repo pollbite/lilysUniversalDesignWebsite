@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Open+Sans&display=swap');
+
+body {
+    background-color: #B7DEFF;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+}
+
+p {
+    color: #152B4A;
+    line-height: 1.7em;
+}
+
+figcaption {
+    color:#152B4A; 
+    line-height: 1.7em; 
+    font-size: 16px;
+    max-width: 500px;
+    
+}
+
+footer {
+    color:#152B4A; 
+    font-size: 15px;
+}
+
+ul {
+    color:#152B4A; 
+    line-height: 1.7em;
+}
+
+.container {
+    max-width: 960px; 
+    margin: 0 auto; 
+}
+
+h1, 
+h2, 
+h3 {
+    font-family: 'Merriweather', serif;
+    font-weight: 700; 
+    color:#152B4A;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+h2 {
+    font-size: 2em; 
+}
+
+h3 {
+    font-size: 1.5em; 
+}
+
+
+/* font-family: 'Merriweather', serif; */
+
+.sr-only {
+    border: 0; 
+    clip: rect(0,0,0,0);
+    height: 1px; 
+    margin: -1px; 
+    overflow: hidden; 
+    padding: 0; 
+    position: absolute; 
+    white-space: nowrap;
+    width: 1px;
+}
+
+nav ul li {
+    list-style: none; 
+}
+
+nav ul li a {
+    text-decoration: none; 
+    font-size: 1.3em; 
+}
+
+nav ul li a:link {
+    color: black; 
+}
+
+nav ul li a:visited {
+    color: black; 
+}
+
+nav ul li a:hover {
+    color: black; 
+    background: white; 
+}
+
+nav ul li a:active{
+    color: magenta;
+}
