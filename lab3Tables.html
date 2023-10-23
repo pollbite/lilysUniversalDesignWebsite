@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab #3: Tables, Forms, Tabbed Browsing, and Screen Reading</title>
+    <link href="css/lab3Tables.css" rel="stylesheet">
+</head>
+
+
+<body>
+    <div class="container">
+
+    <a class="skip-link" href="#introForm">Skip to main content</a>
+
+    <header id="Header">
+        <h1>Tables, Forms, Tabbed Browsing, and Screen Reading</h1>
+    </header>
+
+    <nav>
+        <h2 class="sr-only">Main Navigation</h2>
+        <div class="dropdown">
+            <button class="dropdownButton"Dropdown>
+                <span class="material-icons">expand_more</span>
+            </button>
+            <ul class="dropdownContent">
+                <li><a href="#Header">(Top)</a><span aria-hidden=”true” class="material-icons">arrow_upward</span></li>
+                <li><a href="#introForm">Intro Form</a><span aria-hidden=”true” class="material-icons">start</span></li>
+                <li><a href="#introParagraph">Learn more about the games story</a><span aria-hidden=”true” class="material-icons">auto_stories</span></li>
+                <li><a href="#theSevenNations">The Seven Nations</a><span aria-hidden=”true” class="material-icons">public</span></li>
+            </ul>
+        </div>
+      </nav>
+
+    <main>
+
+    <section id="introForm">
+        <form id="myform" method="post">
+            <fieldset>
+                <legend>Tell me a bit about yourself</legend>
+
+                <label for="name">
+                    What is your name? *required
+                    <input type="text" id="name" required>
+                </label>
+
+                <label for="your-email">
+                    What is your email?
+                    <input type="email" id="your-email">
+                </label>
+
+                <label for="phone">
+                    What is your phone number? 
+                    <input type="tel" id="phone" minlength="7">
+                </label>
+
+                <input type="submit" aria-label="submit information button">
+
+            </fieldset>
+        </form>
+    </section>  
+
+    <section id="introParagraph">
+        <h2>Learn more about the games story</h2>
+        <span aria-hidden=”true” class="material-icons">auto_stories</span>
+        
+        <p>
+            Genshin Impact takes place in the world of Teyvat, composed of seven major nations, each of which is ruled by a different god called an 
+            "Archon", tied to a different element and ideal, and governed by a specific faction. The mysterious floating island of Celestia hangs 
+            above Teyvat, allegedly home to gods, as well as mortals who have ascended to godhood through great, heroic feats. Underground lie the 
+            ruins of Khaenri'ah, a mysterious nation which was destroyed by Celestia 500 years before the main events of the game. Unlike the seven 
+            nations, Khaenri'ah was not ruled over by a god, and sought to create a civilization led solely by humans.
+        </p>
+
+    </section>
+
+    <section id="theSevenNations">
+        <h2>The Seven Nations</h2>
+        <span aria-hidden=”true” class="material-icons">public</span>
+
+        <p>
+            TBA stands for "To be announced". Currently within the game we are in the Fontaine point of the story. Therefore, details about the nations 
+            of Natlan, Snezhnaya and Khaenri'ah. It is also important to note that Khaenri'ah lacks an archon, as before their destruction they rejected 
+            the rule of Celestia. 
+        </p>
+
+        <table>
+            <caption>Teyvat's Seven Nations</caption>
+            <thead>
+                <tr>
+                    <th scope="col">Nation</th>
+                    <th scope="col">Element</th>
+                    <th scope="col">Archon</th>
+                    <th scope="col">Common Alias</th>
+                    <th scope="col">Vessel</th>
+                    <th scope="col">Ideal</th>
+                    <th scope="col">Governing Faction</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Mondstadt</td>
+                    <td>Anemo</td>
+                    <td>Barbatos</td>
+                    <td>Lord Barbatos</td>
+                    <td>Venti</td>
+                    <td>Freedom</td>
+                    <td>Knights of Favonius</td>
+                </tr>
+                <tr>
+                    <td>Liyue</td>
+                    <td>Geo</td>
+                    <td>Morax</td>
+                    <td>Rex Lapis</td>
+                    <td>Zhongli</td>
+                    <td>Contracts</td>
+                    <td>Liyue Qixing</td>
+                </tr>
+                <tr>
+                    <td>Inazuma</td>
+                    <td>Electro</td>
+                    <td>Beelzebul</td>
+                    <td>Raiden Shogun</td>
+                    <td>Ei</td>
+                    <td>Eternity</td>
+                    <td>Inazuma Shogunate</td>
+                </tr>
+                <tr>
+                    <td>Sumeru</td>
+                    <td>Dendro</td>
+                    <td>Buer</td>
+                    <td>Lesser Lord Kusanali</td>
+                    <td>Nahida</td>
+                    <td>Wisdom</td>
+                    <td>Sumeru Akademiya</td>
+                </tr>
+                <tr>
+                    <td>Fontaine</td>
+                    <td>Hydro</td>
+                    <td>Focalors</td>
+                    <td>Lady Furina</td>
+                    <td>Furina</td>
+                    <td>Justice</td>
+                    <td>Mason Gardiennage</td>
+                </tr>
+                <tr>
+                    <td>Natlan</td>
+                    <td>Pryo</td>
+                    <td>TBA</td>
+                    <td>TBA</td>
+                    <td>TBA</td>
+                    <td>War</td>
+                    <td>TBA</td>
+                </tr>
+                <tr>
+                    <td>Snezhnaya</td>
+                    <td>Cryo</td>
+                    <td>TBA</td>
+                    <td>The Tsaritsa</td>
+                    <td>TBA</td>
+                    <td>Love</td>
+                    <td>Fatui</td>
+                </tr>
+                <tr>
+                    <td>Khaenri'ah</td>
+                    <td>TBA</td>
+                    <td>N/A</td>
+                    <td>N/A</td>
+                    <td>N/A</td>
+                    <td>TBA</td>
+                    <td>Eclipse Dynasty</td>
+                </tr>
+            </tbody>
+            
+        </table>
+
+    </section>
+
+</main>
+
+<footer>
+    Site created by lily <address>liba8321@colorado.edu</address>
+    <small>&copy; 2023</small>
+</footer>
+
+</div> <!--end container-->
+</body>
+</html>
