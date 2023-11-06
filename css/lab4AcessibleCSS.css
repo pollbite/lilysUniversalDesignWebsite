@@ -103,7 +103,7 @@ header, footer {
 header {
     grid-area: header1;
     background: rgb(255, 100, 126);
-    color: rgb(254, 222, 254);
+    color: black;
     font-size: 1.5em;
 }
 
@@ -190,6 +190,8 @@ nav ul li a:active{
             "aside3 aside3"
             "aside4 aside4"
             "footer1 footer1"
+            "aside1 aside1"
+            "aside2 aside2"
         }
     }
 
