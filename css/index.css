@@ -304,7 +304,7 @@ a {
         }
 
         .disclosure-nav {
-          max-width: 100px; 
+          max-width: 100%; 
         }
 
         img {
