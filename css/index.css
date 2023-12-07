@@ -306,4 +306,11 @@ a {
         .disclosure-nav {
           max-width: 100px; 
         }
+
+        img {
+          padding: .3em; 
+          margin: 3%;
+          display: block;
+          float: center;
+        }
     }
