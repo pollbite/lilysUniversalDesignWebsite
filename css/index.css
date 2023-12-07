@@ -298,11 +298,8 @@ a {
 @media screen
     and (max-width: 640px) {
 
-        body {
-          max-width: 100%; 
-        }
-
         .container {
+            max-width: 100%; 
             grid-template-columns: 
             1fr;
 
