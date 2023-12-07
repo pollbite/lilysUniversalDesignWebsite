@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Lily's Homepage</title>
   <link href="css/index.css" rel="stylesheet">
+  <script src="js/index.js"></script>
 </head>
 
 
@@ -15,16 +16,33 @@
       <h1>Lily's Homepage</h1>
     </header>
 
-    <nav>
-      <ul>
-          <li><a href="#aboutMe">About Me</a></li>
-          <li><a href="semantic.html">Lab #2</a></li>
-          <li><a href="lab3Tables.html">Lab #3</a></li>
-          <li><a href="lab4AcessibleCSS.html">Lab #4</a></li>
+    <nav aria-label="Main Navigation for Lily's Homepage">
+      <ul id="exTest" class="disclosure-nav">
+        <li>
+          <a href="#aboutMe">About Me</a>
+        </li>
+        <li>
+          <button type="button" aria-expanded="true" aria-controls="id_lab_menu">Labs</button>
+          <ul id="id_about_menu">
+            <li>
+              <a href="indexPages/lab2.html">Lab #2</a>
+            </li>
+            <li>
+              <a href="indexPages/lab3.html">Lab #3</a>
+            </li>
+            <li>
+              <a href="indexPages/lab4.html">Lab #4</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="indexPages/favoriteProject.html">Favorite Project</a>
+        </li>
+          
       </ul>
     </nav>
 
-    <main id="aboutMe">
+    <main id="aboutMe" class="aboutMePageContent" tabindex="-1" role="region">
       <h2>About Me</h2>
 
       <figure>
@@ -34,7 +52,11 @@
       <p>
         Hi! My name is Lily. I'm a junior in Creative Technology and Design, with a minor in Art Practices. 
         My current focus is on graphic design. I work as a design associate with the ATLAS Institute administration, 
-        and I also work the front desk in the administrative office (feel free to drop by and say hi). In my free time, 
+        and I also work the front desk in the administrative office. 
+      </p>
+
+      <p>
+        In my free time, 
         I love playing video games, playing Dungeons and Dragons, and drawing. I'm a freelance digital artist, and I 
         often draw fan art for my favorite series! 
       </p>
