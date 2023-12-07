@@ -92,6 +92,14 @@ body {
   position: relative;
 }
 
+.disclosure-nav li a:hover, 
+.disclosure-nav li a:focus {
+  background-color: white;
+  color:#222645;
+  margin-bottom: 0;
+  text-decoration: none;
+}
+
 .disclosure-nav ul a {
   border: 0;
   color: white;
@@ -280,17 +288,5 @@ a {
                 "nav1"
                 "main1"
                 "footer1"
-        }
-
-        nav ul {
-            flex-flow: column nowrap; 
-            text-align: center; 
-        }
-
-        nav ul li a {
-            display: block; 
-            padding: 10px 5px; 
-            margin: 5px; 
-            background: #222645;
         }
     }
