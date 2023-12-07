@@ -313,7 +313,7 @@ a {
         .disclosure-nav {
           max-width: 100%; 
           padding: 0; 
-          font-size: .5em;
+          flex-direction: column; 
         }
 
         h1 {
