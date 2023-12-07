@@ -179,6 +179,11 @@ img {
   float: left;
 }
 
+.fullBleedImg {
+  float: right; 
+  max-width: 95%; 
+}
+
 
 h1, 
 h2, 
@@ -305,6 +310,7 @@ a {
 
         .disclosure-nav {
           max-width: 100%; 
+          padding: 0; 
         }
 
         img {
