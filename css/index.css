@@ -310,6 +310,10 @@ a {
                 "footer1"
         }
 
+        p {
+          max-width: 90%;
+        }
+
         nav {
           display: block;
           margin-left: auto;
@@ -321,8 +325,17 @@ a {
           flex-direction: column; 
         }
 
+        header, footer {
+          text-align: left; 
+        }
+
         h1 {
-          float: right; 
+          max-width: 80%; 
+        }
+
+        h2 {
+          text-align: left; 
+          padding: 0; 
         }
 
         img {
