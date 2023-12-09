@@ -21,9 +21,7 @@
                 <li><a href="languageofDesign.html">Language of Design</a></li>
                 <li><a href="interactionDesignInfo.html">Interaction Design & Information</a></li>
                 <li><a href="introWebStandards.html">Intro to Web Standards</a></li>
-                <li><a href="codingMetaData.html">Coding and Meta Data</a></li>
-                <li><a href="structureSemantics.html">Structure and Semantics</a></li>
-                <li><a href="tablesScreenReaders.html">Tables and Screen Readers</a></li>
+                <li><a href="codingMetaData.html">Coding and Meta Data: Tables and Forms</a></li>
                 <li><a href="cssResponsive.html">CSS Responsive Layout</a></li>
                 <li><a href="accessibility.html">Accessiblity</a></li>
             </ul>
@@ -32,15 +30,623 @@
 
           <main id="introUD">
             <h2>Intro to Universal Design</h2>
+
+            <p>
+              Welcome all! This website is meant to be a abbreviated summary of how to code accessibly; why its important, and the basics of how 
+              to get started. I would also reccommend checking out the WCAG for some really in depth, awesome guides. Let's get started!
+            </p>
       
             <p>
-              Placeholder for furture information
+              Universal Design is the framework to accessible design. Universal Design not only addresses the needs of those with disabilities, 
+              but also addresses the needs of a wide variety of people with a diverse set of abilities. For example, a wheelchair accessible 
+              ramp is not only important for a wheelchair user, but also for a mother with a stroller or a delivery person with a cart.
+            </p>
+
+            <p>
+              There are also wide reaching benefits to designing universally. It is no secret that our population is aging rapidly. As we grow older
+              we often develop disabilities, and must rely upon accessible tech to move forward. In 2022 the National Census found the number of 
+              people over 80 years of age increased by 25% since the 2016 census. This same National Census found that the percentage of persons in Ireland
+              with disabilities increased 22% from the 2016 census. 
+            </p>
+
+            <p>
+              Technology is pivotal to today's world, and therefore must be accessible for everyone. The majority of people do everything online now; banking, 
+              paying bills, ordering essential goods. As society progresses, we will only become more and more reliant on technology, and therefore we must 
+              make that technology accessible for all. 
+            </p>
+
+            <p>
+              Accesibility should not be an afterthought either. We should start with implementing accessibility into our technology, rather than changing it 
+              after the fact. Implementing accessbility from the start is often cheaper than implementing it later, and less difficult. Additionally, it means 
+              that we can guarentee that that accessibility feature is truly accessible. In physical products and buildings, implementing accessibility from the
+              beginning also improves that accessbilities aesthetic as well. 
+            </p>
+
+            <p>
+              One past solution that is uneffective for web design accessbility is text only sites. Text only sites are often not updated with the main site, and 
+              even when they are, they lack key information. Images are key information, and alt text sites often don't have any implementation of alt text. 
+              Making sure that content is accessible should not be an afterthought; much like with physical design our products and coding are overall of worse 
+              quality when we do not considering a broad spectrum of users. 
+            </p>
+
+            <h3>Principles of Universal Design and POUR</h3>
+
+            <p>
+              Now that we've established the importance of accessibility, we should discuss its general principles. These principles are important things that 
+              must be considered as we design. Lets start with a framework of design principles taken from the book <i>A Web for Everyone</i>: 
+            </p>
+            
+            <ul>
+              <li>
+                <b>People First: Designing for Differences:</b>
+                People are the first consideration, and sites are designed with the needs of everyone in the audience in mind.
+              </li>
+              <li>
+                <b>Clear Purpose: Well-Defined Goals:</b>
+                People enjoy products that are designed for the audience and guided by a defined purpose and goals.
+              </li>
+              <li>
+                <b>Solid Structure: Built to Standards</b>
+                People feel confident using the design because it is stable, robust, and secure.
+              </li>
+              <li>
+                <b>Easy Interaction: Everything Works</b>
+                People can use the product across all modes of interaction and operating with a broad range of devices.
+              </li>
+              <li>
+                <b>Helpful Wayfinding: Guides Users</b>
+                People can navigate a site, feature, or page following self-explanatory signposts.
+              </li>
+              <li>
+                <b>Clean Presentation: Supports Meaning</b>
+                People can perceive and understand elements in the design.
+              </li>
+              <li>
+                <b>Plain Language: Creates a Conversation</b>
+                People can read, understand, and use the information.
+              </li>
+              <li>
+                <b>Accessible Media: Supports All Senses</b>
+                People can understand and use information contained in media such as images, audio, video, animation, and presentations.
+              </li>
+              <li>
+                <b>Universal Usability: Creates Delight</b>
+                People can focus on the experience and their own goals because the product anticipates their needs.
+              </li>
+            </ul>
+
+            <p>
+              This set of principles is geared towards web design, but can be applicable in many different fields of design. They are based on the 
+              two foundational sets of principles; the Principles of Universal Design, created in 1996 by a group of designers, architects and 
+              rehabilitation engineers, and the POUR (Perceivable, Operable, Understandable, Robust), an acronym created by the W3C Web Accessibility
+              Initiative (WAI). 
+            </p>
+
+            <p>
+              Let's start with POUR's principles:
+            </p>
+
+            <ul>
+              <li>
+                <b>Perceivable:</b> Information and user interface components must be
+                presented to users in ways they can see or hear.
+              </li>
+              <li>
+                <b>Operable:</b> User interface components and navigation must be
+                designed so that users can interact with them and they can support
+                assistive technologies such as screen readers.
+              </li>
+              <li>
+                <b>Understandable:</b> Information and the operation of user interface must
+                communicate clearly and consistently so that the content is readable.
+              </li>
+              <li>
+                <b>Robust:</b> Content must be written so that it can be interpreted reliably
+                by a wide variety of user agents, including assistive technologies.
+              </li>
+            </ul>
+
+            <p>
+              Now, we'll take a look at the Principles of Universal Design. While these principles are mmore general in their approach, they are still essential 
+              to our understanding of Universal Design, and foundational to the Universal Design concept. These principles are as follows: 
+            </p>
+
+            <ul>
+              <li>
+                <b>Equitable Use:</b> The design does not disadvantage or stigmatize any
+                group of users.
+              </li>
+              <li>
+                <b>Flexibility in Use:</b> The design accommodates a wide range of individual preferences and abilities.
+              </li>
+              <li>
+                <b>Simple, Intuitive Use:</b> Use of the design is easy to understand,
+                regardless of the user's experience, knowledge, language skills, or current concentration level.
+              </li>
+              <li>
+                <b>Perceptible Information:</b> The design communicates necessary
+                information effectively to the user, regardless of ambient conditions
+                or the user's sensory abilities.
+              </li>
+              <li>
+                <b>Tolerance for Error:</b> The design minimizes hazards and the adverse
+                consequences of accidental or unintended actions.
+              </li>
+              <li>
+                <b>Low Physical Effort:</b> The design can be used efficiently, comfortably,
+                and with a minimum of fatigue.
+              </li>
+              <li>
+                <b>Size and Space for Approach and Use:</b> Appropriate size and space
+                is provided for approach, reach, manipulation, and use, regardless of
+                the user's body size, posture, or mobility.
+              </li>
+            </ul>
+
+            <h3>Diversity of Web Users</h3>
+
+            <p>
+              Disability is not one size fits all; there is a broad spectrum of disabled users that will use your website. I'll give you a cursory introduction of some possible 
+              disabilities that your users may have here, but I reccomend diving deeper by visiting WAI's website and speaking to disabled people in your community. 
+            </p>
+
+            <h4>Auditory</h4>
+
+            <p>
+              Auditory disabilities range from mild or moderate hearing loss in one or both ears (“hard of hearing”) to substantial and uncorrectable hearing loss in both ears 
+              (“deafness”). Some people with auditory disabilities can hear sounds but sometimes not sufficiently to understand all speech, especially when there is background 
+              noise. This can include people using hearing aids.
+            </p>
+
+            <p>
+              Here are some examples of auditory disabilities:
+            </p>
+
+            <ul>
+              <li>
+                <b>Hard of hearing</b> - mild or moderate hearing impairments in one or both ears.
+              </li>
+              <li>
+                <b>Deafness</b> - substantial, uncorrectable impairment of hearing in both ears.
+              </li>
+              <li>
+                <b>Deaf-blindness</b> - substantial, uncorrectable hearing and visual impairments.
+              </li>
+            </ul>
+
+            <p>
+              Here are some examples of barriers for people with auditory disabilities:
+            </p>
+
+            <ul>
+              <li>
+                Audio content, such as videos with voices and sounds, without captions or transcripts.
+              </li>
+              <li>
+                Media players that do not display captions and that do not provide volume controls.
+              </li>
+              <li>
+                Media players that do not provide options to adjust the text size and colors for captions.
+              </li>
+              <li>
+                Web-based services, including web applications, that rely on interaction using voice only.
+              </li>
+              <li>
+                Lack of sign language to supplement important information and text that is difficult to read.
+              </li>
+            </ul>
+
+            <h4>Cognitive, Learning and Neurological</h4>
+
+            <p>
+              Cognitive, learning, and neurological disabilities involve neurodiversity and neurological disorders, as well as behavioral and mental health 
+              disorders that are not necessarily neurological. They may affect any part of the nervous system and impact how well people hear, move, see, 
+              speak, and understand information. Cognitive, learning, and neurological disabilities do not necessarily affect the intelligence of a person.
+            </p>
+
+            <p>
+              Here are some examples of cognitive, learning and neurological disabilties:
+            </p>
+
+            <ul>
+              <li>
+                <b>Attention deficit hyperactivity disorder (ADHD) (formerly “attention deficit disorder (ADD)”)</b> - involves difficulty focusing on a single task, 
+                focusing for longer periods, or being easily distracted.
+              </li>
+              <li>
+                <b>Autism spectrum disorder (ASD) (includes “autism,” “Asperger syndrome,” and “pervasive developmental disorder” (PDD))</b> - involves impairments of social 
+                communication and interaction abilities, and sometimes restricted habits and interests.
+              </li>
+              <li>
+                <b>Intellectual disabilities (sometimes called “learning disabilities” in Europe and some other countries, and “developmental disabilities” in other regions)</b> - 
+                involves impairments of intelligence, learning more slowly, or difficulty understanding complex concepts. Down syndrome is one among many different causes of 
+                intellectual disabilities.
+              </li>
+              <li>
+                <b>Learning disabilities</b> - is a functional term rather than a medical condition, and is not uniformly defined. In Europe and some other countries, it 
+                refers to intellectual disabilities, while in Australia, Canada, the U.S., and some other countries it refers to perceptual disabilities.
+              </li>
+              <li>
+                <b>Mental health disabilities</b> - includes anxiety, delirium, depression, paranoia, schizophrenia, and many other disorders. These conditions may cause 
+                difficulty focusing on information, processing information, or understanding it. In particular medication for these disorders may have side effects 
+                including blurred vision, hand tremors, and other impairments.
+              </li>
+              <li>
+                <b>Memory impairments</b> - involves limited short-term memory, missing long-term memory, or limited ability to recall language. Dementia is one among many 
+                different causes of memory impairments.
+              </li>
+              <li>
+                <b>Multiple sclerosis</b> - causes damage to nerve cells in the brain and spinal cord, and can affect auditory, cognitive, physical, or visual abilities, 
+                in particular during relapses.
+              </li>
+              <li>
+                <b>Neurodiversity</b> - is a societal rather than medical term to describe the natural diversity in neurocognitive functioning, like gender, ethnicity, sexual 
+                orientation, and disability.
+              </li>
+              <li>
+                <b>Perceptual disabilities (sometimes called “learning disabilities” in Australia, Canada, the U.S., and some other countries)</b> - involves difficulty processing 
+                auditory, tactile, visual, or other sensory information. This can impact reading (dyslexia), writing (dysgraphia), processing numbers (dyscalculia), or 
+                spatial and temporal orientation.
+              </li>
+              <li>
+                <b>Seizure disorders</b> - includes different types of epilepsy and migraines, which may be in reaction to visual flickering or audio signals at certain frequencies 
+                or patterns.
+              </li>
+            </ul>
+
+            <p>
+              Here are some examples of barriers for people with cognitive, learning and neurological disabilities: 
+            </p>
+            
+            <ul>
+              <li>
+                Complex navigation mechanisms and page layouts that are difficult to understand and use.
+              </li>
+              <li>
+                Complex sentences that are difficult to read and unusual words that are difficult to understand.
+              </li>
+              <li>
+                Long passages of text without images, graphs, or other illustrations to highlight the context.
+              </li>
+              <li>
+                Moving, blinking, or flickering content, and background audio that cannot be turned off.
+              </li>
+              <li>
+                Web browsers and media players that do not provide mechanisms to suppress animations and audio.
+              </li>
+              <li>
+                Visual page designs that cannot be adapted using web browser controls or custom style sheets.
+              </li>
+            </ul>
+
+            <p>
+              Another element of cognitive disability that I think is important is triggers. For those with panic related disorders, especially C-PTSD and PTSD, 
+              imagery or sounds related to trauma can lead to panic attacks. Providing trigger warnings for potentially sensitive content (such as sexual assault)
+              and sudden loud noises is important. 
+            </p>
+
+            <h4>Physical</h4>
+            
+            <p>
+              Physical disabilities (sometimes called “motor disabilities”) include weakness and limitations of muscular control (such as involuntary movements including tremors, 
+              lack of coordination, or paralysis), limitations of sensation, joint disorders (such as arthritis), pain that impedes movement, and missing limbs.
+            </p>
+
+            <p>
+              Here are some examples of physical disabilities:
+            </p>
+
+            <ul>
+              <li>
+                <b>Amputation</b> - includes missing fingers, limbs, or other parts of the human body.
+              </li>
+              <li>
+                <b>Arthritis (previously called “rheumatism”)</b> - inflammation, degeneration, or damage to the joints.
+              </li>
+              <li>
+                <b>Fibromyalgia (formerly called “rheumatism”)</b> - the chronic pain of muscle and connective tissues.
+              </li>
+              <li>
+                <b>Rheumatism</b> - typically refers to arthritis and other causes of bone or joint pain, and sometimes to fibromyalgia and other causes for muscular and 
+                other soft tissue pain.
+              </li>
+              <li>
+                <b>Reduced dexterity</b> - is a functional term (rather than a medical condition) that describes the ability to control the hand, such as hand-eye coordination 
+                of people with cognitive and neurological disabilities.
+              </li>
+              <li>
+                <b>Muscular dystrophy</b> - progressive weakness and degeneration of muscles, sometimes including in arms and hands.
+              </li>
+              <li>
+                <b>Repetitive stress injury (RSI) (also called “repetitive motion disorder” (RMD) and “cumulative trauma disorder” (CT))</b> - involves injuries to the 
+                musculoskeletal system (bones, joints, tendons, and other connective tissues) and the nervous system from repetitive tasks and damage.
+              </li>
+              <li>
+                <b>Tremor and spasms</b> - involuntary movement or muscle contraction, including short twitches, and continual or rhythmic muscle contractions.
+              </li>
+              <li>
+                <b>Quadriplegia (sometimes called “tetraplegia”)</b> - partial or total paralysis (includes motor control and sensation) to all four body limbs 
+                (legs and arms) and the torso.
+              </li>
+            </ul>
+
+            <p>
+              Here are some examples of barriers for people with physical disabitlies: 
+            </p>
+
+            <ul>
+              <li>
+                Websites, web browsers, and authoring tools that do not provide full keyboard support.
+              </li>
+              <li>
+                Insufficient time limits to respond or to complete tasks, such as to fill out online forms.
+              </li>
+              <li>
+                Controls, including links with images of text, that do not have equivalent text alternatives.
+              </li>
+              <li>
+                Missing visual and non-visual orientation cues, page structure, and other navigational aids.
+              </li>
+              <li>
+                Inconsistent, unpredictable, and overly complicated navigation mechanisms and page functions.
+              </li>
+            </ul>
+
+            <h4>Speech</h4>
+
+            <p>
+              Speech disabilities include difficulty producing speech that is recognizable by others or by voice recognition software. For example, the loudness or 
+              clarity of someone's voice might be difficult to understand.
+            </p>
+
+            <p>
+              Here are some examples of speech disabilities: 
+            </p>
+
+            <ul>
+              <li>
+                <b>Apraxia of speech (AOS)</b> - includes inconsistent articulation and production of speech sounds, and errors producing sounds in the correct order 
+                so that spoken words or phrases become difficult to understand.
+              </li>
+              <li>
+                <b>Cluttering (also called “tachyphemia”)</b> - includes increased speaking rate, incorrect rhythm, intonation, and co-articulation of sounds, and other 
+                influent speech that is sometimes similar to stuttering.
+              </li>
+              <li>
+                <b>Dysarthria</b> - involves weakness or complete paralysis of muscles that are necessary to produce speech, including lips, lungs, throat, tongue, and others.
+              </li>
+              <li>
+                <b>Speech sound disorder</b> - involves difficulty or inability to produce certain sounds or patterns of sound and sometimes results in addition, distortion, 
+                omission, or substitution of such sounds with others.
+              </li>
+              <li>
+                <b>Stuttering</b> - includes influent speech, repetition of individual sounds or entire words and phrases, and misplacement or prolongation of pauses and sounds 
+                while speaking that is different from cluttering.
+              </li>
+              <li>
+                <b>Muteness (also called “mutism”)</b> - involves the inability to speak due to various reasons such as anxiety, brain injuries, or inability to hear and learn speech.
+              </li>
+            </ul>
+
+            <p>
+              Here are some examples of barriers for people with speech disabilities: 
+            </p>
+
+            <ul>
+              <li>
+                Web-based services, including web applications, that rely on interaction using voice only.
+              </li>
+              <li>
+                Websites that offer phone numbers as the only way to communicate with the organizations.
+              </li>
+            </ul>
+
+            <h4>Visual</h4>
+
+            <p>
+              Visual disabilities range from mild or moderate vision loss in one or both eyes (“low vision”) to substantial and uncorrectable vision loss in both eyes 
+              (“blindness”). Some people have reduced or lack of sensitivity to certain colors (“color blindness”), or increased sensitivity to bright colors. 
+              These variations in perception of colors and brightness can be independent of the visual acuity.
+            </p>
+
+            <p>
+              Here are some examples of visual disabilities:
+            </p>
+            
+            <ul>
+              <li>
+                <b>Color blindness</b> - includes difficulty distinguishing between colors such as between red and green, or between yellow and blue, and sometimes inability 
+                to perceive any color.
+              </li>
+              <li>
+                <b>Low vision</b> - (in some regions also called “partial sight”) includes poor acuity (vision that is not sharp), tunnel vision (seeing only the middle of the 
+                visual field), central field loss (seeing only the edges of the visual field), and clouded vision.
+              </li>
+              <li>
+                <b>Blindness</b> - substantial, uncorrectable loss of vision in both eyes.
+              </li>
+              <li>
+                <b>Deaf-blindness</b> - substantial, uncorrectable visual and hearing impairments.
+              </li>
+            </ul>
+
+            <p>
+              Here are some examples of barriers for people with visual disabilities: 
+            </p>
+
+            <ul>
+              <li>
+                Images, controls, and other structural elements that do not have equivalent text alternatives.
+              </li>
+              <li>
+                Text, images, and page layouts that cannot be resized, or that lose information when resized.
+              </li>
+              <li>
+                Missing visual and non-visual orientation cues, page structure, and other navigational aids.
+              </li>
+              <li>
+                Video content that does not have text or audio alternatives, or an audio-description track.
+              </li>
+              <li>
+                Inconsistent, unpredictable, and overly complicated navigation mechanisms and page functions.
+              </li>
+              <li>
+                Text and images with insufficient contrast between foreground and background color combinations.
+              </li>
+              <li>
+                Websites, web browsers, and authoring tools that do not support the use of custom color combinations.
+              </li>
+              <li>
+                Websites, web browsers, and authoring tools that do not provide full keyboard support.
+              </li>
+            </ul>
+
+            <h4>Tools and Techniques</h4>
+
+            <p>
+              There are also a wide variety of tools that disabled people navigating the web may use. Often, they are refered to as assistive technology. 
+              Assistive technologies should be kept in mind while coding; make sure that your website is compatable with assistive technologies!
+            </p>
+
+            <p>
+              Some common assistive technologies and preferences to think about when coding are screen readers and keyboard only users. Screen readers are often 
+              utilized by visually impaired people, and they read out the screen to the user. This is why coding semantically is so important, you want to make sure 
+              that the text on your website is readable to someone with a screen reader! Users also might be unable to use a mouse, and they will instead "tab through"
+              the content on your webpage. Make sure that your content is tab friendly!
+            </p>
+
+            <p>
+              Some people may also be feeling your website, such as reading through a braille reader or vibration. Some people may also be unable to hear any audio 
+              content on your website, and can only see it. 
+            </p>
+
+            <p>
+              People may also make adjustments to your website to make it easier for them to understand and distinguish. They could make audio content easier to hear 
+              and visual content easier to see, combine audio and visual content to make information easier to understand, or use alternate presentations of context, 
+              such as sign language. 
+            </p>
+
+            <p>
+              Outside of users using their keyboard only through the tab method, some people may only be able to use a touch screen, use mouse and keyboard software 
+              that accomadates for things like hand tremors, or use voice recognition. 
+            </p>
+
+            <p>
+              Navigating and finding things on your website is also important. It should be clear to a user where to go and how to get there, and people may need more 
+              guidance if it is thier first time on a website. It's also important to consider users who aren't as computer literate, or on a variety of devices. 
+            </p>
+
+            <h3>User Profiles</h3>
+
+            <p>
+              Essential to understanding how to code accessibly is understanding who we're coding for. This is common practice in many professional spaces (such as marketing), 
+              but creating a user profile of a potential user of your web application is a great way to think about this. I've selected a few profiles from UX Magazine 
+              as examples, but 
+              feel free to explore more! 
+            </p>
+
+            <h4>Trevor: High School Student with Autism</h4>
+
+            <figure>
+              <img src="./img/trevorUDFinal.png" alt="white cartoon teen with brown hair leaning over a tablet">
+            </figure>
+
+            <p>
+              Trevor is a bright 18-year-old who plays games and watches music videos on his laptop. He lives at home with his parents and younger sister. He attends 
+              a special school where the teachers and staff can help with his social and communication challenges from his Autism Spectrum Disorder, while he works to 
+              pass his high school exams.
+            </p>
+
+            <p>
+              He has problems with visual information and recognizing things on the page, and his reading skills are not helped by his trouble concentrating on the 
+              page or screen long enough to read. His teachers showed him how to make the text bigger on the page, and told him how to use a printable view to hide 
+              all the ads with moving images that distract him, because he reads every word on the page very carefully and literally. He can be easily confused by 
+              colloquialisms and metaphors. He can also be overwhelmed by sites that offer too many choices.
+            </p>
+
+            <p>
+              He likes using the school's forum to talk to his friends. It's easier to just read what they want to say than to listen and try to figure out their 
+              facial expressions.
+            </p>
+
+            <p>
+              He shares a laptop with the family, but has first dibs on it because his parents want him to get his schoolwork done. He uses it for homework, but he 
+              really likes games with repetitive actions. He doesn't like new sites much, in the same way that he doesn't like any changes in his routine: 
+              they are tolerated, but not encouraged.
+            </p>
+
+            <h4>Emily: Cerebral Palsy, Living Independently</h4>
+
+            <figure>
+              <img src="./img/emilyUDFinal.png" alt="white cartoon woman with brown hair in a scooter">
+            </figure>
+
+            <p>
+              Emily is determined to do things for herself, so she's tried a lot of different keyboards and joysticks over the years, looking for the right kind of 
+              interaction. Speech is difficult for her, so she uses a communications program with speech output.
+            </p>
+
+            <p>
+              It's slow for her to type with limited use of her fingers. She has stored many phrases and sentences, and can make the program speak for her more easily.
+            </p>
+
+            <p>
+              The iPad turned out to be one of the best solutions. Mounted on the scooter, it's always within reach, and touch works better than a keyboard and a 
+              joystick. In some situations, it can replace her older communications program.
+            </p>
+
+            <p>
+              Instant messaging and social media have also been great. The short formats work well for her, and text can be a more comfortable way to communicate than speech.
+            </p>
+
+            <p>
+              Her latest discovery is an app that scans the area to show her what shops and restaurants are in each direction. “I look like a dancing fool spinning my scooter 
+              around, but it saves me a lot of time finding someplace new.”
+            </p>
+
+            <h4>Carol: Grandmother with Macular Degeneration</h4>
+
+            <figure>
+              <img src="./img/carolUDFinal.png" alt="elderly white woman with white hair reading a book with a cat in her lap">
+            </figure>
+
+            <p>
+              Carol has always loved reading, so her fading eyesight is a real sorrow to her. She tried recorded books, but she didn't like listening instead of 
+              seeing the words in front of her.
+            </p>
+
+            <p>
+              As a bookkeeper for 25 years, she made the transition from ledgers to a software program, so she's happy to use the computer. She has an old home computer, 
+              which she uses the same way she always did her work—carefully checking everything as she goes. She loves getting emails from her grandkids (and a few friends). 
+              She likes reading magazine articles online, especially when they are free. Last year, she discovered that she could get her prescriptions more cheaply online, 
+              and now she buys some things from the web.
+            </p>
+
+            <p>
+              Her biggest problem is that the text is so small. She's learned how to click on the symbol to make the text bigger, but is frustrated when it doesn't work 
+              the same way on every site.
+            </p>
+
+            <p>
+              She also finds that her hands aren't as steady as they used to be, and she can't always click on things accurately. She likes her “old fashioned” mobile 
+              phone with large buttons that she can feel easily.
+            </p>
+
+            <p>
+              As her eyes get worse, she wonders how long she'll be able to keep using the computer. All that light gray text on a white screen. It's just too hard 
+              to see. Maybe it's really better for younger people.
+            </p>
+
+            <p>
+              For each of these profiles, think about the three A's: ability, aptitude and attitude. Then, think about the assistive technology they use regularly. 
+              How can you create websites that are usable for them? I encourage you to seek out different profiles beyond these, and think about the ways that you can 
+              adapt your websites for them. 
             </p>
       
           </main>
       
           <footer>
-            Site created by lily, credit to following articles for page information (link) 
+            Site created by lily, bibliography for all sources used <a href="bibliography.html" 
             <address>liba8321@colorado.edu</address>
             <small>&copy; 2023</small>
           </footer>

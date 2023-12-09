@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coding & Meta Data</title>
+    <title>Coding & Meta Data: Tables and Forms</title>
     <link href="css/UD.css" rel="stylesheet">
 </head>
 <body>
@@ -21,9 +21,7 @@
                 <li><a href="languageofDesign.html">Language of Design</a></li>
                 <li><a href="interactionDesignInfo.html">Interaction Design & Information</a></li>
                 <li><a href="introWebStandards.html">Intro to Web Standards</a></li>
-                <li><a href="codingMetaData.html">Coding and Meta Data</a></li>
-                <li><a href="structureSemantics.html">Structure and Semantics</a></li>
-                <li><a href="tablesScreenReaders.html">Tables and Screen Readers</a></li>
+                <li><a href="codingMetaData.html">Coding and Meta Data: Tables and Forms</a></li>
                 <li><a href="cssResponsive.html">CSS Responsive Layout</a></li>
                 <li><a href="accessibility.html">Accessiblity</a></li>
             </ul>
@@ -31,11 +29,127 @@
 
 
           <main id="codingMetaData">
-            <h2>Coding and Metadata</h2>
+            <h2>Coding and Metadata: Tables and Forms</h2>
       
             <p>
-              Placeholder for furture information
+              All of the labels on your HTML have meaning, and those meanings should be regarded first and foremost. Your h1, h2, h3 etc. should be heirarchical, and 
+              unordered lists vs. ordered lists should be used with intention. This applies for all of your structured HTML, and is essential for any user. 
             </p>
+
+            <p>
+              There's also a great guide on how to implement ARIA, which is a method of adding information to your HTML so that disabled users are able to navigate more 
+              complex user interactions from W3C, which you can check out here: 
+            </p>
+
+            <a href="https://www.w3.org/TR/using-aria/">ARIA Guide!</a>
+
+            <h3>Forms</h3>
+
+            <p>
+              For forms, one of the most important things is to code for user error. Make it impossible for users to enter invalid answers, and let them know what is 
+              invalid about their answers as well. Make sure that your forms are tabbable, and that they have clear color contrasts. Clear input types are essential! 
+            </p>
+
+            <h3>Tables</h3>
+
+            <p>
+              Tables are all about semantics. Make sure you create a semantic table, where all portions of the table are clearly labled with semantic HTML. This is relatively 
+              simple; use labels such as thead, tbody, etc. 
+            </p>
+
+            <p>
+              I have an example of how to do this below! If you'd like a deeper look at this code, just rightclick the page and select "view source" from the menu.
+            </p>
+
+            <table>
+              <caption>Teyvat's Seven Nations</caption>
+              <thead>
+                  <tr>
+                      <th scope="col">Nation</th>
+                      <th scope="col">Element</th>
+                      <th scope="col">Archon</th>
+                      <th scope="col">Common Alias</th>
+                      <th scope="col">Vessel</th>
+                      <th scope="col">Ideal</th>
+                      <th scope="col">Governing Faction</th>
+                  </tr>
+              </thead>
+              <tbody>
+                  <tr>
+                      <td>Mondstadt</td>
+                      <td>Anemo</td>
+                      <td>Barbatos</td>
+                      <td>Lord Barbatos</td>
+                      <td>Venti</td>
+                      <td>Freedom</td>
+                      <td>Knights of Favonius</td>
+                  </tr>
+                  <tr>
+                      <td>Liyue</td>
+                      <td>Geo</td>
+                      <td>Morax</td>
+                      <td>Rex Lapis</td>
+                      <td>Zhongli</td>
+                      <td>Contracts</td>
+                      <td>Liyue Qixing</td>
+                  </tr>
+                  <tr>
+                      <td>Inazuma</td>
+                      <td>Electro</td>
+                      <td>Beelzebul</td>
+                      <td>Raiden Shogun</td>
+                      <td>Ei</td>
+                      <td>Eternity</td>
+                      <td>Inazuma Shogunate</td>
+                  </tr>
+                  <tr>
+                      <td>Sumeru</td>
+                      <td>Dendro</td>
+                      <td>Buer</td>
+                      <td>Lesser Lord Kusanali</td>
+                      <td>Nahida</td>
+                      <td>Wisdom</td>
+                      <td>Sumeru Akademiya</td>
+                  </tr>
+                  <tr>
+                      <td>Fontaine</td>
+                      <td>Hydro</td>
+                      <td>Focalors</td>
+                      <td>Lady Furina</td>
+                      <td>Furina</td>
+                      <td>Justice</td>
+                      <td>Mason Gardiennage</td>
+                  </tr>
+                  <tr>
+                      <td>Natlan</td>
+                      <td>Pryo</td>
+                      <td>TBA</td>
+                      <td>TBA</td>
+                      <td>TBA</td>
+                      <td>War</td>
+                      <td>TBA</td>
+                  </tr>
+                  <tr>
+                      <td>Snezhnaya</td>
+                      <td>Cryo</td>
+                      <td>TBA</td>
+                      <td>The Tsaritsa</td>
+                      <td>TBA</td>
+                      <td>Love</td>
+                      <td>Fatui</td>
+                  </tr>
+                  <tr>
+                      <td>Khaenri'ah</td>
+                      <td>TBA</td>
+                      <td>N/A</td>
+                      <td>N/A</td>
+                      <td>N/A</td>
+                      <td>TBA</td>
+                      <td>Eclipse Dynasty</td>
+                  </tr>
+              </tbody>
+              
+            </table>
 
       
           </main>
