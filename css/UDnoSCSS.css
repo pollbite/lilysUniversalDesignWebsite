@@ -116,6 +116,7 @@ h1 {
 .nav-item {
     position: relative; 
     right: 50px;
+    padding: 0; 
 }
 
 .menu a{
