@@ -4,31 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Interaction Design & Information</title>
-    <link href="css/UD.css" rel="stylesheet">
+    <link href="css/UDnoSCSS.css" rel="stylesheet">
+    <script src="UD.js"></script>
+
 </head>
 <body>
 
     <div class="container">
-        <header>
-            <a class="skip-link" href="#interactionDesign">Skip to main content</a>
-            <h1>Universal Design</h1>
-        </header>
+      <header class="nav-top">
+        <a class="skip-link" href="#interactionDesign">Skip to main content</a>
 
+        <input aria-label="mobile menu bar" class="side-menu" type="checkbox" id="side-menu"/>
+        <label ariah label="mobile menu bar" class="hamb" for="side-menu"><span class="hamb-line">menu ↓</span></label>
+        
+    <nav class="nav">
+      <ul class="menu" id="navMenu">
+          <li class="nav-item">
+            <a class="nav-link" href="UDhomepage.html">Intro to Universal Design</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="languageofDesign.html">Language of Design</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#interactionDesign">Interaction Design & Information</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="introWebStandards.html">Intro to Web Standards</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="codingMetaData.html">Coding and Meta Data: Tables and Forms</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="cssResponsive.html">CSS Responsive Layout</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="accessibility.html">Accessiblity</a>
+          </li>
+      </ul>
+    </nav>
 
-        <nav>
-            <ul>
-                <li><a href="#introUD">Intro to Universal Design</a></li>
-                <li><a href="languageofDesign.html">Language of Design</a></li>
-                <li><a href="interactionDesignInfo.html">Interaction Design & Information</a></li>
-                <li><a href="introWebStandards.html">Intro to Web Standards</a></li>
-                <li><a href="codingMetaData.html">Coding and Meta Data: Tables and Forms</a></li>
-                <li><a href="cssResponsive.html">CSS Responsive Layout</a></li>
-                <li><a href="accessibility.html">Accessiblity</a></li>
-            </ul>
-          </nav>
+    </header>
 
 
           <main id="interactionDesign">
+            <h1>Universal Design</h1>
+
             <h2>Interaction Design</h2>
 
             <h3>Principles of Page Design</h3>
@@ -69,7 +89,7 @@
           </main>
       
           <footer>
-            Site created by lily, credit to following articles for page information (link) 
+            Site created by lily, credit to the Universal Design course for all links used
             <address>liba8321@colorado.edu</address>
             <small>&copy; 2023</small>
           </footer>

@@ -277,6 +277,23 @@ a {
   padding: 0; 
 }
 
+table, th, td {
+  border-collapse: collapse;
+}
+table {
+  margin-bottom: 30px; 
+}
+td {
+  border: 2px solid black;
+  padding: 7px; 
+  text-align: center;
+}
+
+tr {
+  font: bold;
+}
+
+
 
 @media screen 
     and (min-width: 641px)
@@ -293,7 +310,22 @@ a {
         }
     }
 
-
+  table, th, td {
+      border-collapse: collapse;
+  }
+  table {
+      margin-bottom: 30px; 
+  }
+  td {
+      border: 2px solid black;
+      padding: 7px; 
+      text-align: center;
+  }
+  
+  tr {
+      font: bold;
+  }
+  
 
 @media screen
     and (max-width: 640px) {

@@ -1,0 +1,321 @@
+/* imported the font roboto for simple clean look */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,900&display=swap'); 
+
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+
+.sr-only {
+    border: 0; 
+    clip: rect(0,0,0,0);
+    height: 1px; 
+    margin: -1px; 
+    overflow: hidden; 
+    padding: 0; 
+    position: absolute; 
+    white-space: nowrap;
+    width: 1px;
+  }
+  
+  .skip-link {
+    background:black; 
+    color: #ffff;
+    font-weight: 700; 
+    padding: 4px; 
+    position: absolute; 
+    transform: translateY(-200%);
+  }
+  
+  .skip-link:focus {
+    transform: translateY(-100%);
+  }
+  
+  .skip-link {
+    transition: transform -0.3s; 
+  }
+
+  body {
+    font-family: "Roboto", sans-serif; 
+    font-size: 1.5em; 
+    font-weight: 400; 
+  }
+
+  .container {
+    max-width: 85%; 
+    margin: 0 auto; 
+  }
+
+  h1 { 
+    font-family: "Righteous", sans-serif;
+  }
+
+  h2 {
+    font-size: 1.4em; 
+    font-weight: 700; 
+  }
+
+  h3 {
+    font-size: 1.2em; 
+    font-weight: 500; 
+  }
+
+  h4, 
+  h5 {
+    font-weight: 500; 
+    font-size: 1em; 
+  }
+
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+
+  .squareImage {
+    display: block; 
+    margin-left: 0; 
+    padding: 20px 0 20px 0;
+  }
+
+  b {
+    font-weight: 500; 
+  }
+
+  a {
+    color: inherit;
+  }
+
+
+h1 {
+  font-weight: bold;
+  font-size: 1.5em;
+  margin-bottom: 1em;
+}
+
+#navMenu {
+    list-style:none; 
+}
+
+
+.header {
+    position: sticky; 
+    top: 0; 
+    width: 100; 
+}
+
+.nav {
+    width: 100%; 
+    height: 100%; 
+    position: fixed; 
+    top: 100px;
+    background-color: white; 
+    overflow: hidden; 
+    text-align: left;
+}
+
+.nav-item {
+    position: relative; 
+    right: 50px;
+}
+
+.menu a{
+    display: block; 
+    padding: 30px; 
+    color: black; 
+    text-decoration: none;
+}
+
+.menu a:hover{
+    background-color: gray;
+}
+
+.nav {
+    max-height: 0; 
+    transition: max-height .5s ease-out; 
+}
+
+.hamb {
+    cursor: pointer; 
+    display: block;
+    float: right;
+    padding: 0; 
+    position: relative; 
+    top: 30px;
+    font-weight: 700;
+}
+
+.hamb-line::before, 
+.hamb-line::after {
+    background: black; 
+    width: 100%; 
+}
+
+.hamb-line::before{
+    top: 5px; 
+}
+
+.hamb-link::after {
+    top : -5px; 
+}
+
+.side-menu {
+    display: none; 
+}
+
+/* Toggle menu icon */
+.side-menu:checked ~ nav{
+    max-height: 100%;
+}
+.side-menu:checked ~ .hamb .hamb-line {
+    background: transparent;
+}
+.side-menu:checked ~ .hamb .hamb-line::before {
+    transform: rotate(-45deg);
+    top:0;
+}
+.side-menu:checked ~ .hamb .hamb-line::after {
+    transform: rotate(45deg);
+    top:0;
+}
+
+footer {
+    font-size: .5em;
+    padding: 20px;
+}
+
+	/* Force table to not be like tables anymore */
+	table, thead, tbody, th, td, tr { 
+		display: block; 
+        font-size: 15px;
+	}
+    
+    caption {
+        font-weight: 700; 
+    font-size: 30px;
+    margin: 20px;
+    }
+	
+	/* Hide table headers (but not display: none;, for accessibility) */
+	thead tr { 
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+	
+	tr { border: 1px solid #ccc; }
+	
+	td { 
+		/* Behave  like a "row" */
+		border: none;
+		border-bottom: 1px solid #eee; 
+		position: relative;
+		padding-left: 50%; 
+	}
+	
+	td:before { 
+		/* Now like a table header */
+		position: absolute;
+		/* Top/left values mimic padding */
+		top: 6px;
+		left: 6px;
+		width: 45%; 
+		padding-right: 10px; 
+		white-space: nowrap;
+        font-weight: 500; 
+	}
+	
+	/*
+	Label the data
+	*/
+	td:nth-of-type(1):before { content: "Nation"; }
+	td:nth-of-type(2):before { content: "Element"; }
+	td:nth-of-type(3):before { content: "Archon"; }
+	td:nth-of-type(4):before { content: "Common Alias"; }
+	td:nth-of-type(5):before { content: "Vessel"; }
+	td:nth-of-type(6):before { content: "Ideal"; }
+	td:nth-of-type(7):before { content: "Governing Faction"; }
+
+
+li {
+    padding: 10px;
+}
+
+/* Responsiveness */
+@media (min-width: 768px) {
+    .nav{
+        max-height: none;
+        top: 0;
+        position: relative;
+        float: left;
+        width: fit-content;
+        background-color: transparent;
+        grid-area: nav1;
+    }
+    .menu li{
+        float: left;
+    }
+    .menu a:hover{
+        background-color: white;
+        color: gray;
+
+    }
+
+    .hamb{
+        display: none;
+    }
+
+    .container{
+        max-width: 1200 px; 
+        margin: 0 auto; 
+        background: white;
+        display: grid; 
+        width: 100 vw; 
+        height: 100 vh; 
+        grid-template-columns: 
+         0.5fr    2fr     0fr; 
+        grid-template-areas: 
+        "nav1    header1 header1"
+        "nav1   main1    main1"
+        "nav1 main1   main1"
+        "nav1 main1   main1"
+        "footer1    footer1 footer1"
+      }
+
+      .nav-item {
+        position: relative; 
+        right: 70px;
+    }
+
+    .nav-link {
+        font-size: 20px;
+    }
+      body {
+        grid-area: main1;
+      }
+
+      p {
+        max-width: 100;
+      }
+
+      footer {
+        grid-area: footer1;
+      }
+
+      img {
+        max-width: 500px;
+      }
+
+      .squareImage {
+        float: left; 
+      }
+
+      h1 {
+        font-size:60px;
+      }
+
+      table, thead, tbody, th, td, tr { 
+		display: block; 
+        font-size: 20px;
+	}
+
+}
